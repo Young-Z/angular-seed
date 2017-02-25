@@ -7,7 +7,7 @@ beforeEach(inject(function(_$controller_){
 }));
 
 describe('sum', function () {
-  it('1 + 1 should equal 2', function () {
+  it('1 + 1 should equal 3', function () {
     var $scope = {};
     var homeCtrl = $controller('HomeController', { $scope: $scope });
 

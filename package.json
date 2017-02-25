@@ -35,7 +35,7 @@
     "html:cp": "copyup ./src/**/*.html ./dist",
     "html:watch": "onchange 'src/**/*.html' -v -- npm run html:cp",
     "js:build": "webpack",
-    "js:watch": "onchange 'src/**/*.js' -e 'src/**/*.spec.js' -v -- npm run js:build",
+    "js:watch": "onchange 'src/**/*.js' -e '**/*.spec.js' -v -- npm run js:build",
     "css:build": "node-sass --output-style compressed -r src/ -o dist/",
     "css:watch": "onchange 'src/**/*.scss' -v -- npm run css:build",
     "styles:cp": "copyup ./src/styles/**/**/* ./dist",
@@ -47,7 +47,7 @@
     "url": "https://github.com/Young-Z/angular-seed.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Yan Zhang",
   "license": "MIT",
   "homepage": "https://github.com/Young-Z/angular-seed"
 }

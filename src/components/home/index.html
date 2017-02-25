@@ -8,7 +8,7 @@
 
     {{home.greeting}}
 
-    <div>1+1={{home.sum(1,1)}}</div>
+    <div ng-init="home.x=2; home.y=3">{{home.x}}+{{home.y}}={{home.sum(home.x, home.y)}}</div>
 
     <script src="/bundle.js"></script>
 </body>

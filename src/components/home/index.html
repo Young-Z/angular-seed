@@ -1,0 +1,15 @@
+<html ng-app="app">
+<head>
+    <link rel="stylesheet" href="/styles/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/styles/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body  class="container" ng-controller="HomeController as home">
+
+    {{home.greeting}}
+
+    <div>1+1={{home.sum(1,1)}}</div>
+
+    <script src="/bundle.js"></script>
+</body>
+</html>
